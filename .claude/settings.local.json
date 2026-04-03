@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm install)",
+      "mcp__github__create_repository",
+      "Bash(gh repo create pretext-3d --public --description \"A template for building editorial web pages where live 3D geometry actively shapes the text layout\")",
+      "Bash(gh --version)",
+      "Bash(where gh)",
+      "Bash(gh auth status)",
+      "Bash(cmd.exe /c \"gh --version\")"
+    ]
+  }
+}

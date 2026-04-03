@@ -252,6 +252,7 @@ async function loadModel() {
 
 function normalizeModel(root) {
   root.updateWorldMatrix(true, true)
+  root.rotation.y = Math.PI / 2  // Rotate model so front faces camera
   const box = new THREE.Box3().setFromObject(root)
   const size = box.getSize(new THREE.Vector3())
   const center = box.getCenter(new THREE.Vector3())
