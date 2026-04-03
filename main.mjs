@@ -233,7 +233,7 @@ async function loadModel() {
     statusChip.textContent = 'Loading model…'
 
     const loader = new GLTFLoader()
-    const gltf = await loader.loadAsync('./assets/model.glb')
+    const gltf = await loader.loadAsync('/model.glb')
     modelRoot = gltf.scene
     normalizeModel(modelRoot)
     scene.add(modelRoot)
